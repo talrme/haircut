@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#25483e">
+  <meta name="description" content="15 personal haircut previews, with barber notes and styling routines.">
+  <title>Haircut — Your next look</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#looks">Skip to the styles</a>
+  <header class="site-header"><a class="brand" href="./"><span class="brand-icon">✂</span> haircut<span class="brand-dot">.</span></a><span class="edition">A PERSONAL LOOKBOOK / NOV 2026</span><a class="directory" href="https://talrme.github.io/all-websites/">All websites ↗</a></header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">A LITTLE PLANNING BEFORE THE CHAIR</p><h1>Same you.<br><em>Next chapter.</em></h1><p class="intro">Ten cuts for today. Five ideas to grow into.<br>Your waves, your face, a few new possibilities.</p><a class="primary" href="#looks">Find your next look <span>↘</span></a><div class="hero-note"><span>15</span><p>personal previews<br>with a plan for every cut</p></div></div>
+      <div class="hero-photo"><img src="assets/01.webp" alt="AI preview of you with a wavy scissor taper" fetchpriority="high" width="1086" height="1448"><span class="photo-tag">01 / WAVY SCISSOR TAPER</span><span class="preview-stamp">YOUR PERSONAL<br>STYLE STUDY</span></div>
+    </section>
+    <section class="starting-point"><div><p class="eyebrow">THE STARTING POINT</p><h2>Work with the wave.</h2></div><p>Your dry photos show generous length, loose waves, and volume at the sides. With product, your hair sweeps back easily. My shortlist starts with a <button class="text-link" data-open="01">scissor taper</button>, <button class="text-link" data-open="02">short curtains</button>, or a <button class="text-link" data-open="03">textured crop</button> for a bigger change.</p></section>
+    <section id="looks" class="looks" aria-labelledby="looks-title">
+      <div class="section-title"><div><p class="eyebrow">THE POSSIBILITIES</p><h2 id="looks-title">Your next look.</h2></div><p>Grab <strong>⠿</strong> to put your favorites first. <br>Your order saves on this device.</p></div>
+      <div class="toolbar"><div class="tabs" role="group" aria-label="Filter styles"><button class="tab active" data-filter="all" aria-pressed="true">All <span>15</span></button><button class="tab" data-filter="today" aria-pressed="false">Today <span>10</span></button><button class="tab" data-filter="future" aria-pressed="false">Grow into <span>5</span></button><button class="tab" data-filter="saved" aria-pressed="false">♥ Saved <span id="saved-count">0</span></button></div><button id="reset-order" class="quiet">Reset order ↺</button></div>
+      <div class="list-caption"><span id="result-count" aria-live="polite">15 styles</span><span>AI previews · Open a card for the full plan</span></div>
+      <div id="grid" class="grid"></div>
+      <p id="empty" class="empty" hidden>No saved styles yet. Tap the heart on any look to keep it here.</p>
+    </section>
+    <section class="notes"><div><p class="eyebrow">BEFORE THE FIRST SNIP</p><h2>Bring the plan.<br>Let your barber refine it.</h2><p>These are AI visualizations, so details of your face, hairline, and texture can drift. Lengths are suggested targets, not measurements from the photos. Ask your barber to check your dry wave, crown, and actual length before cutting.</p></div><div class="note-list"><details><summary>How to read the ratings</summary><p>Daily effort: 1/5 is simplest, 5/5 is most involved. Change today: 1/5 keeps most length, 5/5 removes a lot. These are practical editorial estimates, not objective scores. Styling times are active time, excluding air-drying and washing; trim intervals are suggested weeks to maintain the shape.</p></details><details><summary>Keeping the long-term options open</summary><p>For any grow-out goal, preserve front and side length today. A crop, crew cut, or close taper will extend the timeline. Timings start from your photographed length, assume minimal trimming, and use roughly ½ inch of growth per month; wave shrinkage and individual growth vary. Dry length and the ability to tuck or tie are better milestones than a date.</p><a href="https://medlineplus.gov/hairproblems.html" target="_blank" rel="noopener">Growth reference: MedlinePlus ↗</a></details><details><summary>A simple routine for your wave</summary><p>Condition the lengths, blot gently, and start with a small amount of product. Air-dry when practical. If using a dryer, use low heat and heat protectant. For a wavier finish, scrunch and avoid brushing once dry; for a swept finish, guide with fingers or a vent brush while drying.</p><a href="https://www.aad.org/public/everyday-care/hair-scalp-care/hair/healthy-hair-tips" target="_blank" rel="noopener">Hair-care reference: American Academy of Dermatology ↗</a></details></div></section>
+  </main>
+  <footer><a class="brand" href="./">haircut<span class="brand-dot">.</span></a><p>Made for your next trip to the barber.<br>Favorites and ordering stay in this browser.</p><a href="https://talrme.github.io/all-websites/">Back to all websites ↗</a></footer>
+  <dialog id="detail" aria-labelledby="detail-title"><div class="dialog-top"><span id="detail-kicker"></span><button id="close-detail" aria-label="Close style details">✕</button></div><div id="detail-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="drag-status" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>
